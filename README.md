@@ -14,3 +14,7 @@
 ## Database
 - Details later
 - Maybe it will be used MongoDB in this project
+
+## Roadmap
+- Initial structure done
+- Grid of images, prove of concept online, 5 images per row
