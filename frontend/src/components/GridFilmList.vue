@@ -1,7 +1,8 @@
 <template>
   <div class="image-grid">
-    <div v-for="(image, index) in images" :key="index" class="image-item">
-      <img :src="`${image}`" alt="Film poster"/>
+    <div v-for="(movie, index) in filteredMovies" :key="index" class="image-item">
+      <img :src="movie.image" :alt="movie.title + ' poster'" />
+      <div class="movie-name">{{ movie.title }}</div>
     </div>
   </div>
 </template>
@@ -10,30 +11,37 @@
 export default {
   data() {
     return {
-      images: [
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        'image1.jpg',
-        // Add more image filenames as needed
+      allMovies: [
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        // Add more movie objects as needed
       ],
+      filteredMovies: [],
     };
+  },
+  methods: {
+    filterMovies(query) {
+      if (query) {
+        this.filteredMovies = this.allMovies.filter((movie) => {
+          return movie.title.toLowerCase().includes(query.toLowerCase());
+        });
+      } else {
+        // When no text is typed in the search bar, show all movies by default
+        this.filteredMovies = this.allMovies;
+      }
+    },
+  },
+  created() {
+    // Execute filterMovies method with an initial query before rendering
+    this.filterMovies(''); // Replace with your initial query
   },
 };
 </script>
@@ -42,17 +50,23 @@ export default {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1px; /* 1px space between images */
+  grid-gap: 1px;
   background-color: black;
 }
 
 .image-item {
-  margin-bottom: 2px; /* 2px space for the next line */
+  margin-bottom: 2px;
 }
 
 img {
   width: 100%;
   height: auto;
   max-width: 100%;
+}
+
+.movie-name {
+  text-align: center;
+  font-weight: bold;
+  color: white;
 }
 </style>
