@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .search-bar {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 input {

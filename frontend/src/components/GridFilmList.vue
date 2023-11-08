@@ -22,6 +22,46 @@ export default {
         { image: 'image1.jpg', title: 'Movie 1' },
         { image: 'image1.jpg', title: 'Movie 1' },
         { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
+        { image: 'image1.jpg', title: 'Movie 1' },
         // Add more movie objects as needed
       ],
       filteredMovies: [],
@@ -50,7 +90,7 @@ export default {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1px;
+  grid-gap: 5px;
   background-color: black;
 }
 
