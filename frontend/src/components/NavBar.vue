@@ -1,16 +1,12 @@
 <template>
-  <nav class="sidebar" :class="{ collapsed: isCollapsed }">
-    <button @click="toggleCollapse">Toggle Sidebar</button>
-    <div v-if="!isCollapsed">
+  <nav class="sidebar">
+    <div>
       <ul>
         <li>
           <router-link to="/">Home</router-link>
         </li>
         <li>
           <router-link to="/about">About</router-link>
-        </li>
-        <li>
-          <router-link to= "/contact">Contact</router-link>
         </li>
       </ul>
     </div>
@@ -20,16 +16,6 @@
 <script>
 export default {
   name: 'NavBar',
-  data() {
-    return {
-      isCollapsed: false, // Initialize sidebar as not collapsed
-    };
-  },
-  methods: {
-    toggleCollapse() {
-      this.isCollapsed = !this.isCollapsed;
-    },
-  },
 };
 </script>
 
