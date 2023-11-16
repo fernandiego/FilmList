@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div class="column1">
-      <NavBar></NavBar>
-    </div>
+<!--    <div class="column1">-->
+<!--      <NavBar></NavBar>-->
+<!--    </div>-->
     <div class="column2">
       <div class="row1">
         <SearchBar @search="filterMovies"/>
@@ -36,25 +36,9 @@ export default {
 <style scoped>
 .container {
   display: grid;
-  grid-template-columns: 1fr 10fr; /* Two columns with a 1:2 ratio */
+  //grid-template-columns: 1fr 10fr; /* Two columns with a 1:2 ratio */
   gap: 10px; /* Gap between columns */
   height: 100vh;
-//border: 1px solid red;
-}
-
-.column1 {
-  grid-row: span 1; /* Column 1 spans 1 row */
-  background-color: #333; /* Background color */
-  color: #fff; /* Text color */
-//border: 1px solid red;
-}
-
-.column2 {
-  display: grid;
-  grid-template-rows: 1fr 12fr; /* Two rows with equal height */
-  gap: 5px; /* Gap between rows */
-  background-color: #000000; /* Background color for column 2 */
-  padding: 5px;
 //border: 1px solid red;
 }
 

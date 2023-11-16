@@ -27,4 +27,5 @@
 - Grid of images, prove of concept online, 5 images per row
 - Search bar on the top of the page, already filtering the list by typing text
 - Navbar on the side, left side
-- Create the page movie details, when clicking a film in the initial page, a router should go to the deails
+- Create the page movie details, when clicking a film in the initial page, a router should go to the details
+- Decided to remove the NavBar
